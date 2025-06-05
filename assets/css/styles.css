@@ -85,14 +85,20 @@ body.dark-mode {
 /**=================
  * RESET STYLES
  ==================*/
-*,
-*::before,
-*::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
     transition: all 0.3s ease-in-out;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    overflow-x: hidden;
 }
 
 html {
